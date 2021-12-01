@@ -1,0 +1,22 @@
+@use "@/styles/colors" as *;
+
+@mixin button {
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  box-shadow: -2px -2px 4px darken($dark, 25%), 2px 2px 4px darken($light, 25%);
+  transition: box-shadow 0.15s ease;
+
+  &:active {
+    box-shadow: -1px -1px 1px darken($dark, 25%),
+      1px 1px 1px darken($light, 25%);
+    transform: translate(1px, 1px);
+    transition: box-shadow 0.15s ease;
+  }
+
+  &:hover {
+    box-shadow: -2px -2px 2px darken($dark, 25%),
+      2px 2px 2px darken($light, 25%);
+  }
+}

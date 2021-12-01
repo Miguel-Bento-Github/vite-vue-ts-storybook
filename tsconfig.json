@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "strictBindCallApply": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["vite/client", "node", "@intlify/vite-plugin-vue-i18n/client"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "files": ["src/shims-vue.d.ts"],
+  "include": ["src/**/**.ts", "src/**/*.vue", "src/**/*.d.ts"],
+  "exclude": ["node_modules"]
+}
