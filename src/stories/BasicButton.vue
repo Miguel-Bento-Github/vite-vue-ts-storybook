@@ -43,7 +43,7 @@ const style = computed(() => ({
 @use "@/styles/functions/color" as *;
 
 .storybook-button {
-  font-family: "Volte", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
   border-radius: 3em;
