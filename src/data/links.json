@@ -1,0 +1,32 @@
+[
+  {
+    "href": "https://vitejs.dev/",
+    "alt": "Vite logo",
+    "src": "src/assets/svg/vite.svg"
+  },
+  {
+    "href": "https://v3.vuejs.org/",
+    "alt": "Vue 3 logo",
+    "src": "src/assets/svg/vue.svg"
+  },
+  {
+    "href": "https://storybook.js.org/",
+    "alt": "Storybook logo",
+    "src": "src/assets/svg/storybook.svg"
+  },
+  {
+    "href": "https://www.typescriptlang.org/",
+    "alt": "TS logo",
+    "src": "src/assets/svg/ts.svg"
+  },
+  {
+    "href": "https://eslint.org//",
+    "alt": "ESLint logo",
+    "src": "src/assets/svg/eslint.svg"
+  },
+  {
+    "href": "https://prettier.io/",
+    "alt": "Prettier logo",
+    "src": "src/assets/svg/prettier.svg"
+  }
+]

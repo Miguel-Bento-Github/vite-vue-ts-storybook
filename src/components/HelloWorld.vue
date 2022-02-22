@@ -14,9 +14,11 @@ const { t } = useI18n();
   <h1>{{ msg }}</h1>
   <p>
     {{ t("setup") }}
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
+    <a href="https://code.visualstudio.com/">VSCode</a>
     +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
+    <a href="https://github.com/johnsoncodehk/volar">Volar</a>
+    +
+    <a href="https://github.com/lokalise/i18n-ally">i18n-ally</a>
   </p>
 
   <p>
@@ -26,26 +28,19 @@ const { t } = useI18n();
 
   <h2>{{ t("docs") }}</h2>
   <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank"> Vite </a>
+    <a href="https://vitejs.dev/guide/features.html"> Vite </a>
     |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3</a>
+    <a href="https://v3.vuejs.org/">Vue 3</a>
     |
-    <a
-      href="https://storybook.js.org/docs/vue/get-started/introduction"
-      target="_blank"
-    >
+    <a href="https://storybook.js.org/docs/vue/get-started/introduction">
       Storybook
     </a>
     |
-    <a href="https://www.typescriptlang.org/docs/" target="_blank">
-      Typescript
-    </a>
+    <a href="https://www.typescriptlang.org/docs/"> Typescript </a>
     |
-    <a href="https://eslint.org/docs/user-guide/" target="_blank"> ESLint </a>
+    <a href="https://eslint.org/docs/user-guide/"> ESLint </a>
     |
-    <a href="https://prettier.io/docs/en/index.html" target="_blank">
-      Prettier
-    </a>
+    <a href="https://prettier.io/docs/en/index.html"> Prettier </a>
   </p>
 
   <h3>{{ t("check-reactivity") }}</h3>
@@ -66,10 +61,6 @@ const { t } = useI18n();
 
 <style lang="scss" scoped>
 @use "@/styles/functions/color" as *;
-
-a {
-  color: #42b983;
-}
 
 label {
   margin: 0 0.5em;
