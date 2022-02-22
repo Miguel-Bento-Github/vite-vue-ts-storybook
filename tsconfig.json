@@ -8,12 +8,13 @@
     "strictBindCallApply": true,
     "importHelpers": true,
     "moduleResolution": "node",
+    "isolatedModules": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "types": ["node", "@intlify/vite-plugin-vue-i18n/client", "vite/client"],
     "paths": {
       "@/*": ["src/*"]
@@ -22,5 +23,5 @@
   },
   "files": ["src/env.d.ts"],
   "include": ["src/**/**.ts", "src/**/*.vue", "src/**/*.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "**/*.stories.ts"]
 }

@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import HelloWorld from "./components/HelloWorld.vue";
+import LocaleSelect from "./components/LocaleSelect.vue";
 
 const { t } = useI18n();
 </script>
 
 <template>
+  <locale-select></locale-select>
   <a class="logo-link" href="https://vitejs.dev/">
     <img class="logo" alt="Vite logo" src="./assets/svg/vite.svg" />
   </a>
