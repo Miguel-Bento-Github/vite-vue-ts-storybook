@@ -1,3 +1,11 @@
 {
-  "welcome": "Bem vindo a Vite + Vue 3 + Storybook + Typescript"
+  "welcome": "Bem vindo a Vite + Vue 3 + Storybook + Typescript",
+  "setup": "Configuração de IDE recomendada:",
+  "check-reactivity": "Verifique a reatividade",
+  "count": "sem cliques | {count} clique | {count} cliques",
+  "docs": "Documentos",
+  "hmr.edit": "Editar",
+  "hmr.test": "para testar a HMR",
+  "see-readme.more-info": "Para mais informações.",
+  "see-readme.see": "Veja"
 }

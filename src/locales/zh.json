@@ -1,0 +1,11 @@
+{
+  "check-reactivity": "检查反应性",
+  "count": "没有点击 | {count} 点击 | {count} 次点击",
+  "docs": "文档",
+  "hmr.edit": "编辑",
+  "hmr.test": "测试热模块更换",
+  "see-readme.more-info": "了解更多信息。",
+  "see-readme.see": "看",
+  "setup": "推荐的 IDE 设置：",
+  "welcome": "欢迎使用 Vite Vue 3 故事书打字稿"
+}

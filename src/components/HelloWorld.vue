@@ -1,24 +1,30 @@
 <script setup lang="ts">
 import BasicButton from "@/stories/BasicButton.vue";
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import { useI18n } from "vue-i18n";
 
 defineProps<{ msg: string }>();
 
 const count = ref(0);
+
+const { t } = useI18n();
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
   <p>
-    Recommended IDE setup:
+    {{ t("setup") }}
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
     +
     <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
   </p>
 
-  <p>See <code>README.md</code> for more information.</p>
+  <p>
+    {{ t("see-readme.see") }} <code>README.md</code>
+    {{ t("see-readme.more-info") }}
+  </p>
 
-  <h2>Docs</h2>
+  <h2>{{ t("docs") }}</h2>
   <p>
     <a href="https://vitejs.dev/guide/features.html" target="_blank"> Vite </a>
     |
@@ -42,18 +48,19 @@ const count = ref(0);
     </a>
   </p>
 
-  <h3>Check reactivity</h3>
+  <h3>{{ t("check-reactivity") }}</h3>
 
   <basic-button
     size="small"
     type="button"
     @click="count++"
-    :label="count ? `Count is: ${count}` : 'Click me!'"
+    :label="t('count', { count })"
   >
   </basic-button>
   <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
+    {{ t("hmr.edit") }}
+    <code>components/HelloWorld.vue</code>
+    {{ t("hmr.test") }}
   </p>
 </template>
 

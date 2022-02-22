@@ -1,3 +1,16 @@
 {
-  "welcome": "Welcome to Vite + Vue 3 + Storybook + Typescript"
+  "welcome": "Welcome to Vite + Vue 3 + Storybook + Typescript",
+  "setup": "Recommended IDE setup:",
+  "see-readme": {
+    "see": "see",
+    "more-info": "for more information."
+  },
+  "docs": "Docs",
+  "check-reactivity": "Check reactivity",
+  "count": "no clicks |  {count} click | {count} clicks",
+  "hmr": {
+    "edit": "Edit",
+    "test": "to test hot module replacement"
+  },
+  "select-locale": "Select locale"
 }
