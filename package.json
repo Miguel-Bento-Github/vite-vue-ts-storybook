@@ -9,7 +9,8 @@
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-    "format": "prettier .  --write"
+    "format": "prettier .  --write",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.2.37",
