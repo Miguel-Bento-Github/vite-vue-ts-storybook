@@ -2,31 +2,31 @@
   {
     "href": "https://vitejs.dev/",
     "alt": "Vite logo",
-    "src": "src/assets/svg/vite.svg"
+    "src": "vite"
   },
   {
     "href": "https://v3.vuejs.org/",
     "alt": "Vue 3 logo",
-    "src": "src/assets/svg/vue.svg"
+    "src": "vue"
   },
   {
     "href": "https://storybook.js.org/",
     "alt": "Storybook logo",
-    "src": "src/assets/svg/storybook.svg"
+    "src": "storybook"
   },
   {
     "href": "https://www.typescriptlang.org/",
     "alt": "TS logo",
-    "src": "src/assets/svg/ts.svg"
+    "src": "ts"
   },
   {
     "href": "https://eslint.org//",
     "alt": "ESLint logo",
-    "src": "src/assets/svg/eslint.svg"
+    "src": "eslint"
   },
   {
     "href": "https://prettier.io/",
     "alt": "Prettier logo",
-    "src": "src/assets/svg/prettier.svg"
+    "src": "prettier"
   }
 ]

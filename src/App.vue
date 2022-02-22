@@ -5,6 +5,10 @@ import LocaleSelect from "./components/LocaleSelect.vue";
 import links from "@/data/links.json";
 
 const { t } = useI18n();
+
+const getImgURL = (src: string) => {
+  return new URL(`./assets/svg/${src}.svg`, import.meta.url).href;
+};
 </script>
 
 <template>
@@ -15,7 +19,7 @@ const { t } = useI18n();
     class="logo-link"
     :href="href"
   >
-    <img class="logo" :alt="alt" :src="src" />
+    <img class="logo" :alt="alt" :src="getImgURL(src)" />
   </a>
   <HelloWorld :msg="t('welcome')" />
 </template>
