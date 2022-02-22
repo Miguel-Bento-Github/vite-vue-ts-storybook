@@ -1,6 +1,7 @@
 {
   "name": "vite-vue3-sb",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -34,6 +35,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-storybook": "^0.5.7",
     "eslint-plugin-vue": "^8.0.1",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.5.0",
     "sass": "^1.44.0",
     "storybook-builder-vite": "^0.1.17",
