@@ -39,3 +39,71 @@ yarn format // run prettier on all files
 ## Type Support For `.vue` Imports in TS
 
 Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+
+## Folder structure
+
+```
+.
+├── LICENSE
+├── README.md
+├── index.html
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── svg
+│       ├── eslint.svg
+│       ├── prettier.svg
+│       ├── storybook.svg
+│       ├── ts.svg
+│       ├── vite.svg
+│       └── vue.svg
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   └── fonts
+│   │       └── overpass-regular.otf
+│   ├── components
+│   │   ├── HelloWorld.vue
+│   │   └── LocaleSelect.vue
+│   ├── data
+│   │   └── links.json
+│   ├── locales
+│   │   ├── en.json
+│   │   ├── pt.json
+│   │   └── zh.json
+│   ├── main.ts
+│   ├── shims-vue.d.ts
+│   ├── stories
+│   │   ├── BasicButton.stories.ts
+│   │   ├── BasicButton.vue
+│   │   ├── Header.stories.js
+│   │   ├── Header.vue
+│   │   ├── Introduction.stories.mdx
+│   │   ├── Page.stories.js
+│   │   ├── Page.vue
+│   │   ├── assets
+│   │   │   ├── code-brackets.svg
+│   │   │   ├── colors.svg
+│   │   │   ├── comments.svg
+│   │   │   ├── direction.svg
+│   │   │   ├── flow.svg
+│   │   │   ├── plugin.svg
+│   │   │   ├── repo.svg
+│   │   │   └── stackalt.svg
+│   │   ├── header.css
+│   │   └── page.css
+│   ├── styles
+│   │   ├── _colors.scss
+│   │   ├── _font.scss
+│   │   ├── _reset.scss
+│   │   ├── boot.scss
+│   │   └── functions
+│   │       └── _color.scss
+│   └── types
+│       └── Size.ts
+├── tsconfig.json
+├── vite.config.ts
+├── yarn-error.log
+└── yarn.lock
+```
