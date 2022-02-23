@@ -104,6 +104,5 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 │       └── Size.ts
 ├── tsconfig.json
 ├── vite.config.ts
-├── yarn-error.log
 └── yarn.lock
 ```

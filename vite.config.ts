@@ -3,6 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import { fileURLToPath, URL } from "url";
 import { defineConfig } from "vite";
+import eslintPlugin from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,6 +14,7 @@ export default defineConfig({
       include: resolve(__dirname, "./src/locales/**"),
       runtimeOnly: false,
     }),
+    eslintPlugin(),
   ],
   resolve: {
     alias: {
