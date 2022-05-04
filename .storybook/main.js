@@ -13,7 +13,7 @@ module.exports = {
   ],
   framework: "@storybook/vue3",
   core: {
-    builder: "storybook-builder-vite",
+    builder: "@storybook/builder-vite",
   },
   typescript: {
     check: false,
