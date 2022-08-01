@@ -16,7 +16,7 @@ interface Props {
 }
 
 interface Emits {
-  (e: "click"): void;
+  (event: "click"): void;
 }
 
 const props = withDefaults(defineProps<Props>(), { primary: false });
@@ -46,39 +46,71 @@ const style = computed(() => ({
   font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
-  border-radius: 3em;
+  border-radius: 3rem;
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  transition: all 0.15s ease-in-out;
 }
+
 .storybook-button--primary {
   color: color(light);
   background-color: color(cta, primary);
   border-color: color(cta, primary);
+
+  box-shadow: color(shadow) 2px 2px 4px,
+    inset rgba(color(light), 0.2) 2px -2px 4px;
+
+  &:hover {
+    background-color: rgba(color(cta, primary), 0.9);
+    border-color: rgba(color(cta, primary), 0.9);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: color(shadow) 1px 2px 2px,
+      inset rgba(color(light), 0.2) 2px -2px 4px;
+  }
 
   @media (prefers-color-scheme: dark) {
     color: color(dark);
     background-color: color(light);
   }
 }
+
 .storybook-button--secondary {
-  color: color(light);
-  background-color: transparent;
-  box-shadow: color(light) 0px 0px 0px 1px inset;
+  background-color: color(light);
+  color: color(dark);
+  box-shadow: color(shadow) 2px 2px 4px,
+    inset rgba(color(light), 0.2) 2px -2px 4px;
+
+  &:hover {
+    background-color: rgba(color(dark), 0.9);
+    color: rgba(color(light), 0.9);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: color(shadow) 1px 2px 2px,
+      inset rgba(color(light), 0.2) 2px -2px 4px;
+  }
 
   @media (prefers-color-scheme: dark) {
     background-color: color(dark);
     color: color(light);
   }
 }
+
 .storybook-button--small {
   font-size: 12px;
   padding: 10px 16px;
 }
+
 .storybook-button--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
+
 .storybook-button--large {
   font-size: 16px;
   padding: 12px 24px;
