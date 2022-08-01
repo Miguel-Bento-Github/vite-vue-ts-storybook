@@ -1,6 +1,9 @@
 const { loadConfigFromFile, mergeConfig } = require("vite");
+
 const vueI18n = require("@intlify/vite-plugin-vue-i18n").default;
+
 const eslintPlugin = require("vite-plugin-eslint").default;
+
 const path = require("path");
 
 module.exports = {
@@ -13,23 +16,16 @@ module.exports = {
   ],
   framework: "@storybook/vue3",
   core: {
-    builder: "storybook-builder-vite",
+    builder: "@storybook/builder-vite",
   },
   typescript: {
     check: false,
     checkOptions: {},
-    reactDocgen: "react-docgen-typescript",
-    reactDocgenTypescriptOptions: {
-      shouldExtractLiteralValuesFromEnum: true,
-      propFilter: (prop) =>
-        prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
-    },
   },
   async viteFinal(previousConfig) {
     const { config } = await loadConfigFromFile(
       path.resolve(__dirname, "../vite.config.ts")
     );
-
     return mergeConfig(previousConfig, {
       ...config,
       plugins: [

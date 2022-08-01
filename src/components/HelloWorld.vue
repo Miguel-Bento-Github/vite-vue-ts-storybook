@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BasicButton from "@/stories/BasicButton.vue";
-import { computed, ref } from "vue";
+import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
 defineProps<{ msg: string }>();
